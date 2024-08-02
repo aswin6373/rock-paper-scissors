@@ -1,0 +1,107 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100vh;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(61, 61, 61);
+  color: white;
+  padding: 10px 180px;
+}
+
+#main-heading {
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.play-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 55px;
+}
+
+.vs-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+
+.player-name,
+.computer {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.container {
+  display: flex;
+  gap: 20px;
+  border: 3px solid white;
+  padding: 15px;
+}
+
+img {
+  width: 100px;
+  height: auto;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.player:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.com,
+.hum {
+  display: flex;
+  justify-content: space-between;
+  gap: 80px;
+  margin-top: 5px;
+}
+
+.result {
+  text-align: center;
+  font-size: 1.2rem;
+  margin-bottom: 50px;
+  font-weight: bold;
+}
+
+.score-container {
+  border: 3px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  margin: 0 auto;
+  padding: 5px;
+  gap: 5px;
+  font-size: 1.5rem;
+}
+
+.new-btn {
+  border: 2px solid white;
+  width: 100px;
+  padding: 7px;
+  font-size: 1rem;
+  color: white;
+  background-color: rgb(61, 61, 61);
+  font-weight: bold;
+  cursor: pointer;
+  display: none; /* Initially hidden */
+}
+
+.new-container {
+  display: flex;
+  justify-content: center;
+}
+
